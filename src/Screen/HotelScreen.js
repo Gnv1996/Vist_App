@@ -65,7 +65,7 @@ const HotelScreen = () => {
   const navigation = useNavigation();
 
   const handleBooking = hotel => {
-    console.log(`Book Now pressed for hotel ID: ${hotel.id}`);
+    // console.log(`Book Now pressed for hotel ID: ${hotel.id}`);
     navigation.navigate('Booking', {hotel});
   };
 

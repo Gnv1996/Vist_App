@@ -14,10 +14,6 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 const BookingScreen = ({route, navigation}) => {
   const {hotel} = route.params;
 
-  // Debugging to check if hotel and hotel.image are correctly received
-  console.log('Hotel object:', hotel);
-
-  // Ensure hotel and hotel.image exist
   if (!hotel || !hotel.image) {
     Toast.show({
       type: 'error',
